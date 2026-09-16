@@ -71,7 +71,7 @@ export const ContactSection: React.FC = () => {
     const targetEmail = 'asmithabanu1804@gmail.com';
 
     try {
-      if (web3Key && web3Key !== 'YOUR_WEB3FORMS_ACCESS_KEY') {
+      if (web3Key) {
         const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },

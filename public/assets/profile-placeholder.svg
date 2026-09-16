@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 620" fill="none">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="500" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E172A"/>
+      <stop offset="0.5" stop-color="#0A0F1D"/>
+      <stop offset="1" stop-color="#06090F"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="100" y1="100" x2="400" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0.3"/>
+      <stop offset="0.5" stop-color="#06B6D4" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#F59E0B" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="grid-glow" x1="0" y1="310" x2="500" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#F59E0B" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="500" height="620" rx="24" fill="url(#bg-grad)"/>
+  <rect x="1" y="1" width="498" height="618" rx="23" stroke="#1E293B" stroke-width="2"/>
+  
+  <!-- Subtle Architectural Grid Lines -->
+  <line x1="60" y1="0" x2="60" y2="620" stroke="#1E293B" stroke-opacity="0.6" stroke-dasharray="4 8"/>
+  <line x1="440" y1="0" x2="440" y2="620" stroke="#1E293B" stroke-opacity="0.6" stroke-dasharray="4 8"/>
+  <line x1="0" y1="120" x2="500" y2="120" stroke="#1E293B" stroke-opacity="0.6" stroke-dasharray="4 8"/>
+  <line x1="0" y1="520" x2="500" y2="520" stroke="#1E293B" stroke-opacity="0.6" stroke-dasharray="4 8"/>
+
+  <!-- Circuit Lines & Nodes -->
+  <path d="M60 120 L180 120 L220 160 L350 160 L440 250" stroke="url(#accent-grad)" stroke-width="2" fill="none"/>
+  <circle cx="220" cy="160" r="4" fill="#38BDF8"/>
+  <circle cx="350" cy="160" r="3" fill="#F59E0B"/>
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="250" cy="270" r="140" fill="url(#accent-grad)"/>
+  
+  <!-- Central Architectural Monogram Emblem -->
+  <rect x="160" y="190" width="180" height="200" rx="20" fill="#0A0F1D" stroke="#334155" stroke-width="1.5"/>
+  <path d="M250 220 L300 340 H278 L266 310 H234 L222 340 H200 L250 220Z" fill="white" fill-opacity="0.9"/>
+  <path d="M250 260 L240 292 H260 L250 260Z" fill="#0A0F1D"/>
+  
+  <!-- Subtle Status Badge -->
+  <rect x="120" y="430" width="260" height="42" rx="21" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+  <circle cx="146" cy="451" r="5" fill="#10B981"/>
+  <text x="164" y="456" fill="#94A3B8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="500">Asmitha Banu A • ECE / SWE</text>
+
+  <!-- Instructional Sub-label -->
+  <text x="250" y="560" text-anchor="middle" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="1">DROP PHOTO: /assets/profile.jpg</text>
+</svg>
